@@ -1,0 +1,8 @@
+TP Météo
+
+1) Créer une page avec un menu BootStrap
+2) 2 colonnes responsives 
+3) moteur de recherche pour saisir une ville (input name = 'ville')
+
+4) Diagramme de séquences
+5) Coder

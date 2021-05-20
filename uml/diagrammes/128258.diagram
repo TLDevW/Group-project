@@ -1,0 +1,100 @@
+format 215
+
+classinstance 128002 class_ref 128130 // user
+  name ""   xyz 107 4 2000 life_line_z 2000
+classinstance 128130 class_ref 128258 // CtrlMeteo
+  name ""   xyz 298 11 2000 life_line_z 2000
+classinstance 128642 class_ref 128386 // ViewMeteo
+  name ""   xyz 186 105 2000 life_line_z 2000
+classinstance 129538 class_ref 128642 // ModelMeteo
+  name ""   xyz 425 230 2000 life_line_z 2000
+classinstance 129922 class_ref 128514 // webservice
+  name ""   xyz 601 223 2000 life_line_z 2000
+durationcanvas 128258 classinstance_ref 128002 // :user
+  xyzwh 116 86 2010 11 177
+end
+durationcanvas 128386 classinstance_ref 128130 // :CtrlMeteo
+  xyzwh 322 88 2010 11 130
+end
+durationcanvas 128770 classinstance_ref 128642 // :ViewMeteo
+  xyzwh 215 202 2010 11 43
+end
+durationcanvas 129154 classinstance_ref 128002 // :user
+  xyzwh 116 350 2010 11 174
+end
+durationcanvas 129282 classinstance_ref 128130 // :CtrlMeteo
+  xyzwh 322 347 2010 11 138
+end
+durationcanvas 129666 classinstance_ref 129538 // :ModelMeteo
+  xyzwh 455 367 2010 11 88
+end
+durationcanvas 130050 classinstance_ref 129922 // :webservice
+  xyzwh 628 359 2010 11 70
+end
+durationcanvas 130562 classinstance_ref 128642 // :ViewMeteo
+  xyzwh 215 464 2010 11 50
+end
+msg 128514 asynchronous
+  from durationcanvas_ref 128258
+  to durationcanvas_ref 128386
+  yz 89 2015 explicitmsg "getPage()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "$page"
+  label_xy 201 75
+msg 128898 asynchronous
+  from durationcanvas_ref 128386
+  to durationcanvas_ref 128770
+  yz 202 2015 explicitmsg "afficherPage()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "$page"
+  label_xy 239 188
+msg 129026 return
+  from durationcanvas_ref 128770
+  to durationcanvas_ref 128258
+  yz 234 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 129410 asynchronous
+  from durationcanvas_ref 129154
+  to durationcanvas_ref 129282
+  yz 352 2015 explicitmsg "getMeteo()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "$ville"
+  label_xy 186 338
+msg 129794 asynchronous
+  from durationcanvas_ref 129282
+  to durationcanvas_ref 129666
+  yz 371 2015 explicitmsg "getDataMeteo()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "$ville"
+  label_xy 345 357
+msg 130178 asynchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 130050
+  yz 388 2015 explicitmsg "requete meteo"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 513 374
+msg 130306 return
+  from durationcanvas_ref 130050
+  to durationcanvas_ref 129666
+  yz 418 2020 explicitmsg "json"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 537 404
+msg 130434 return
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 129282
+  yz 442 2015 explicitmsg "data"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 384 428
+msg 130690 asynchronous
+  from durationcanvas_ref 129282
+  to durationcanvas_ref 130562
+  yz 464 2020 explicitmsg "afficherMeteo()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "$data"
+  label_xy 223 450
+msg 130818 return
+  from durationcanvas_ref 130562
+  to durationcanvas_ref 129154
+  yz 497 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+end

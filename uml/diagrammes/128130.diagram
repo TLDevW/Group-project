@@ -1,0 +1,25 @@
+format 215
+
+subject 128002 ""
+  color lightmediumblue  xyzwh 267 72 2000 320 190
+classcanvas 128130 class_ref 128130 // user
+  simpleclassdiagramsettings end
+  xyz 150 68 2000
+end
+usecasecanvas 128258 usecase_ref 128130 // page
+  xyzwh 352 96 3005 95 59 label_xy 385 115
+end
+usecasecanvas 128514 usecase_ref 128258 // meteo
+  xyzwh 366 170 3005 95 41 label_xy 394 182
+end
+classcanvas 129026 class_ref 128514 // webservice
+  simpleclassdiagramsettings end
+  xyz 656 114 2000
+end
+line 128386 ----
+  from ref 128130 z 3006 to ref 128258
+line 128898 ----
+  from ref 128130 z 3006 to ref 128514
+line 129154 ----
+  from ref 128514 z 3006 to ref 129026
+end
