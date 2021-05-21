@@ -12,5 +12,6 @@ if (isset($_GET['page'])){
     $ctrl->getMeteo($_GET['ville']);
 } 
 else{
-    echo "Erreur";
+    $ctrl = new CtrlMeteo();
+    $ctrl->getPage("accueil");
 }
