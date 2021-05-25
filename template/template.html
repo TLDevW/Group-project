@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" />
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -19,11 +20,11 @@
   <?php include "template/nav.html" ?>
 
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 col-lg-offset-1" style="background-color: yellow; height: 200px">
-        <?php include "template/{$page}" ?>
+    <div class="row" style="display: flex;">
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 col-lg-offset-1" >
+        <?php include "{$page}" ?>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-lg-offset-1" style="background-color: red; height: 200px">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-lg-offset-1" >
       </div>
     </div>
   </div>

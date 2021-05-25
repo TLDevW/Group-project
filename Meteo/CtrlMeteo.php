@@ -1,6 +1,6 @@
 <?php
-include_once "ViewMeteo.php";
-include_once "ModelMeteo.php";
+include_once "Meteo/ViewMeteo.php";
+include_once "Meteo/ModelMeteo.php";
 
 class CtrlMeteo
 {
@@ -14,10 +14,7 @@ class CtrlMeteo
         $this->model = new ModelMeteo();
     }
 
-    public function getPage($page="accueil")
-    {
-        $this->view->afficherPage($page);
-    }
+    
 
     public function getMeteo($ville)
     {

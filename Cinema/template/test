@@ -1,0 +1,68 @@
+["records"]=>
+  array(10) {
+    [0]=>
+    array(5) {
+      ["datasetid"]=>
+      string(7) "cinemas"
+      ["recordid"]=>
+      string(40) "44ce7a42b4221a16a13c6c5aff15fae9ddfbd205"
+      ["fields"]=>
+      array(12) {
+        ["id_secteur_postal"]=>
+        int(31000)
+        ["eq_telephone"]=>
+        string(14) "05 61 21 20 46"
+        ["eq_nom_equipement"]=>
+        string(10) "CINEMA ABC"
+        ["eq_site_web"]=>
+        string(20) "www.abc-toulouse.net"
+        ["geo_point_2d"]=>
+        array(2) {
+          [0]=>
+          float(43.6090280357)
+          [1]=>
+          float(1.44397015941)
+        }
+        ["numero"]=>
+        int(13)
+        ["lib_off"]=>
+        string(17) "RUE SAINT BERNARD"
+        ["eq_secteur"]=>
+        int(1)
+        ["eq_quartier"]=>
+        float(1.1)
+        ["geo_shape"]=>
+        array(2) {
+          ["type"]=>
+          string(10) "MultiPoint"
+          ["coordinates"]=>
+          array(1) {
+            [0]=>
+            array(2) {
+              [0]=>
+              float(1.4439701594062)
+              [1]=>
+              float(43.609028035652)
+            }
+          }
+        }
+        ["eq_ville"]=>
+        string(8) "TOULOUSE"
+        ["eq_gestionnaire"]=>
+        string(11) "Association"
+      }
+      ["geometry"]=>
+      array(2) {
+        ["type"]=>
+        string(5) "Point"
+        ["coordinates"]=>
+        array(2) {
+          [0]=>
+          float(1.44397015941)
+          [1]=>
+          float(43.6090280357)
+        }
+      }
+      ["record_timestamp"]=>
+      string(32) "2021-05-24T22:01:39.641000+00:00"
+    }

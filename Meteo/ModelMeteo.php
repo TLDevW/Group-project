@@ -11,7 +11,7 @@ class ModelMeteo
     {
         $url = "http://www.prevision-meteo.ch/services/json/";
         $json = file_get_contents($url . $ville);
-        $data = json_decode($json);
+        $data = json_decode($json, true, 512, JSON_OBJECT_AS_ARRAY);
         return $data;
     }
 }

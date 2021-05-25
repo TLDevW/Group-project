@@ -1,0 +1,21 @@
+<ul>
+    <?php foreach ($data['records'] as $cinema) : ?>
+        <?php
+        $url = "";
+        if (isset($cinema["fields"]["eq_site_web"])) {
+            $url = $cinema["fields"]["eq_site_web"];
+            if (!preg_match("/^http/", $url)) {
+                $url = "http://" . $url;
+            }
+        } else {
+        }
+
+        ?>
+        <li> <?= $cinema["fields"]["eq_nom_equipement"] ?>
+            <ul>
+                <li> <a target="_blank" href="<?= isset($url) ? $url : ""; ?> "><?= ($url!="") ? $url : "Non renseigné"; ?> </a></li>
+            </ul>
+        </li>
+
+    <?php endforeach ?>
+</ul>

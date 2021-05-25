@@ -1,0 +1,24 @@
+@media screen {
+  body div.container div.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body div.container div.row {
+    display: block !important;
+  }
+}
+
+body div.container div.row div:first-of-type {
+  background-color: yellow;
+  min-height: 200px;
+}
+
+body div.container div.row div:last-of-type {
+  background-color: red;
+  min-height: 200px;
+}
+/*# sourceMappingURL=style.css.map */

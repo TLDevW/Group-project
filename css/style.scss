@@ -1,0 +1,22 @@
+$couleurColonneGauche : yellow;
+$couleurColonneDroite : red;
+body {
+    div.container {
+        div.row {
+            @media screen {
+                display: flex;
+                @media (max-width: 768px) {
+                    display: block !important;
+                }
+            }
+            div:first-of-type {
+                background-color: $couleurColonneGauche;
+                min-height: 200px;
+            }
+            div:last-of-type {
+                background-color: $couleurColonneDroite;
+                min-height: 200px;
+            }
+        }
+    }
+}
