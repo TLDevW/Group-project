@@ -1,6 +1,4 @@
 <?php
-include_once "Meteo/ViewMeteo.php";
-include_once "Meteo/ModelMeteo.php";
 
 class CtrlMeteo
 {
@@ -20,5 +18,12 @@ class CtrlMeteo
     {
         $data = $this->model->getDataMeteo($ville);
         $this->view->afficherMeteo($data);
+    }
+
+    public function widgetMeteo(){
+        $heure = date('H') . "H00";
+        $ville = $_SESSION['meteo']['city_info']['name'];
+        $data = $_SESSION['meteo']['fcst_day_0']['hourly_data'][$heure];
+        $this->view->afficherWidget($ville,$data);
     }
 }

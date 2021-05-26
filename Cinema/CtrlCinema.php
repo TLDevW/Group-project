@@ -1,6 +1,4 @@
 <?php
-include_once "Cinema/ViewCinema.php";
-include_once "Cinema/ModelCinema.php";
 
 class CtrlCinema{
     private $view;

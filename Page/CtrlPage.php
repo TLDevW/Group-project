@@ -1,5 +1,4 @@
 <?php
-include_once "Page/ViewPage.php";
 class CtrlPage{
     private $view;
     public function __construct()
