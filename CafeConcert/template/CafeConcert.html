@@ -1,0 +1,41 @@
+<!-- <h1>Toulouse</h1>
+<h2>Café Concert</h2> -->
+<style>
+    div.container{
+        width: 2000px;
+    }
+</style>
+
+
+
+<table class="table table-responsive table-hover" style="width: 100%;">
+    <thead style="background-color: white;">
+        <tr>
+        <th>Nom</th>
+        <th>Adresse</th>
+        <th>Geoloc.</th>
+        <th>Tél.</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+            <?php foreach ($data['records'] as $cafeConcert) : ?>
+                <?php
+                $url = "";
+                if (isset($cafeConcert["fields"]["eq_site_web"])) {
+                    $url = $cafeConcert["fields"]["eq_site_web"];
+                    if (!preg_match("/^http/", $url)) {
+                        $url = "http://" . $url;
+                    }
+                } else {
+                }
+                ?>
+            <tr>
+                <td> <?= $cafeConcert["fields"]["eq_nom_equipement"] ?> </td>
+                <td> <a target="_blank" href="<?= isset($url) ? $url : ""; ?> "><?= ($url != "") ? $url : "Non renseigné"; ?> </a></td>
+                <td> <?= $cafeConcert["fields"]["numero"]." ".$cafeConcert["fields"]["lib_off"]."</br>".$cafeConcert["fields"]["id_secteur_postal"]." ".$cafeConcert["fields"]["eq_ville"]   ?> </td>
+                <td style="width:150px"> <?= isset($cafeConcert["fields"]["eq_telephone"]) ? $cafeConcert["fields"]["eq_telephone"] :"Non renseigné"; ?></td>
+            </tr>
+        <?php endforeach ?>
+        </tbody>
+</table>
