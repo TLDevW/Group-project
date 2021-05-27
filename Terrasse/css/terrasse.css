@@ -1,0 +1,25 @@
+body div.container div.row div:first-of-type {
+  background-color: rgba(196, 196, 196, 0.8);
+  opacity: 1;
+}
+
+body div.container div.row div:first-of-type h2 {
+  text-align: center;
+}
+
+body div.container div.row div:first-of-type div:first-of-type {
+  background-color: rgba(196, 196, 196, 0);
+}
+
+body div.container div.row div:first-of-type div:first-of-type iframe {
+  opacity: 1 !important;
+}
+
+body div.container div.row div:first-of-type div:last-of-type {
+  background-color: rgba(196, 196, 196, 0);
+}
+
+body div.container div.row div:first-of-type div:last-of-type li {
+  color: black;
+}
+/*# sourceMappingURL=terrasse.css.map */
