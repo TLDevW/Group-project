@@ -1,6 +1,8 @@
 body {
   color: #fcfcfc;
-  background-image: url("../assets/img/bg/bg3.jpg");
+  background-color: #000 !important;
+  background: url("../images/thumb-1920-523983.jpg") no-repeat;
+  background-size: 100%;
 }
 
 body nav.navbar.navbar-default {

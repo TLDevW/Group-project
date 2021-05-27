@@ -3,10 +3,15 @@ $couleurColonneDroite : rgba(128,128,128,.2);
 $couleurTexte : #fcfcfc;
 $couleurLien : #fcfcfc;
 $couleurThead : #000;
+$couleurFond : #000;
 $couleurHover : rgba(128,128,128,0.5);
 body {
     color : $couleurTexte;
-    background-image: url("../assets/img/bg/bg3.jpg") ;
+    background-color: $couleurFond !important;
+  //  background-image: url("../assets/img/bg/bg3.jpg") ;
+  //  background: url("../images/800px-Toulouse_garonne_nuit.jpg") no-repeat;
+    background: url("../images/thumb-1920-523983.jpg") no-repeat;
+    background-size: 100%;
     nav.navbar.navbar-default {
         background-color: transparent;
         color : $couleurTexte;
