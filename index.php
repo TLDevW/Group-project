@@ -30,6 +30,14 @@ if (isset($_GET['page'])) {
 elseif (isset($_GET['cafeconcert-carte'])) {
     $ctrl = new CtrlCafeConcert();
     $ctrl->getCarteCafeConcert();
+}elseif (isset($_GET['selectdepartement'])) {
+    $ctrl = new CtrlFestivals();
+    $ctrl->getPage('selectdepartement');
+
+}elseif (!isset($_GET['departement']) == "") {
+    $ctrl = new CtrlFestivals();
+    $ctrl->getListeFestivals($_GET['departement']);
+
 } else {
     $ctrl = new CtrlPage();
     $ctrl->getPage("accueil");

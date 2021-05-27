@@ -1,0 +1,35 @@
+
+<?php include "SelectDepartement.html" ?>
+
+
+<ul class="list-group">
+<h3 style="text-align: center; margin-bottom: 20px;"><?= $data["records"][0]["fields"]["nom_departement"] ?></h3>
+    <?php foreach ($data["records"] as $festival) : ?>
+        <li class="list-group-item" style="background-color: transparent" onmouseover="changeClassDisplay(this)" onmouseout="changeClassHidden(this)"><?= $festival["fields"]["nom_de_la_manifestation"] ?>
+            <ul>
+                <li style="font-size: 12px; font-style: italic; list-style-type: none; margin-bottom: 5px;"> <img style="width: 20px; height: 24px;" src="Festivals/images/puce.png"> <?= $festival["fields"]["commune_principale"] ?></li>
+            </ul>
+            <div style="background-color: black; padding: 10px;" class="hidden">
+            <span style="color: white; line-height: 35px;"> Page Web : <?= (isset($festival["fields"]["site_web"])) ?  $festival["fields"]["site_web"] : "Non renseigné" ?></span>
+                </br>
+                <span style="color: white; line-height: 35px;">Genre : <?= (isset($festival["fields"]["domaine"])) ? $festival["fields"]["domaine"] : "Non renseigné" ?> </span>
+                </br>
+                <span style="color: white; line-height: 35px;">Autres communes concernées :  <?= (isset($festival["fields"]["autres_communes"])) ?  $festival["fields"]["autres_communes"] : "Non renseigné" ?></span>
+                </br>
+                <span style="color: white; line-height: 35px;">Période : <?= (isset($festival["fields"]["mois_habituel_de_debut"])) ? $festival["fields"]["mois_habituel_de_debut"] : "Non renseigné" ?></span>
+                
+                
+            </div>
+        </li>
+
+    <?php endforeach ?>
+</ul>
+<script>
+    function changeClassDisplay(moi){
+        moi.lastChild.previousSibling.className = "";
+}
+
+    function changeClassHidden(moi){
+        moi.lastChild.previousSibling.className = "hidden";
+    }
+</script>
