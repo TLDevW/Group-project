@@ -10,6 +10,10 @@ body nav.navbar.navbar-default {
   color: #fcfcfc;
 }
 
+body button.navbar-toggle {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
 body a {
   color: #fcfcfc;
 }
