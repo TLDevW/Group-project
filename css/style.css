@@ -2,6 +2,7 @@ body {
   color: #fcfcfc;
   background-color: #000 !important;
   background: url("../images/thumb-1920-523983.jpg") no-repeat;
+  background-attachment: fixed;
   background-size: 100%;
 }
 

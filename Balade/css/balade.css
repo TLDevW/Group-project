@@ -1,0 +1,28 @@
+
+.description {
+  border: 2px solid #ee951f;
+  border-radius: 15px;
+  padding: 10px;
+  color: whitesmoke;
+
+}
+.h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+.infos{
+  display: none;
+}
+.all{
+  color: whitesmoke;
+}
+.all h3 {
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+}
+.all hr {
+  border-top: 1px solid #ee951f;
+  width: 50%;
+}

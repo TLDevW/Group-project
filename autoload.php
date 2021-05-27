@@ -7,7 +7,8 @@ spl_autoload_register(function ($class_name)
         'Page/',
         'CafeConcert/',
         'Terrasse/',
-        'Festivals/'
+        'Festivals/',
+        'Balade/'
 
     );
 
