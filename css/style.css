@@ -1,3 +1,29 @@
+body {
+  color: #fcfcfc;
+  background-image: url("../assets/img/bg/bg3.jpg");
+}
+
+body nav.navbar.navbar-default {
+  background-color: transparent;
+  color: #fcfcfc;
+}
+
+body a {
+  color: #fcfcfc;
+}
+
+body table thead tr {
+  color: #000;
+}
+
+body table tbody tr:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+body h1 {
+  color: #fcfcfc;
+}
+
 @media screen {
   body div.container div.row {
     display: -webkit-box;
@@ -13,12 +39,12 @@
 }
 
 body div.container div.row div:first-of-type {
-  background-color: yellow;
+  background-color: rgba(128, 128, 128, 0.2);
   min-height: 200px;
 }
 
 body div.container div.row div:last-of-type {
-  background-color: red;
+  background-color: rgba(128, 128, 128, 0.2);
   min-height: 200px;
 }
 /*# sourceMappingURL=style.css.map */

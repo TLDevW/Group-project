@@ -4,7 +4,10 @@ spl_autoload_register(function ($class_name)
     $directorys = array(
         'Meteo/',
         'Cinema/',
-        'Page/'
+        'Page/',
+        'CafeConcert/',
+        'Terrasse/'
+
     );
 
     //for each directory

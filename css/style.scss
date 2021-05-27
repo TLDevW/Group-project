@@ -1,6 +1,29 @@
-$couleurColonneGauche : yellow;
-$couleurColonneDroite : red;
+$couleurColonneGauche : rgba(128,128,128,.2);
+$couleurColonneDroite : rgba(128,128,128,.2);
+$couleurTexte : #fcfcfc;
+$couleurLien : #fcfcfc;
+$couleurThead : #000;
+$couleurHover : rgba(128,128,128,0.5);
 body {
+    color : $couleurTexte;
+    background-image: url("../assets/img/bg/bg3.jpg") ;
+    nav.navbar.navbar-default {
+        background-color: transparent;
+        color : $couleurTexte;
+
+    }
+    a {
+        color : $couleurLien;
+    }
+    table thead tr {
+color : $couleurThead;
+    }
+    table tbody tr:hover {
+        background-color: $couleurHover;
+    }
+    h1 {
+        color : $couleurTexte;
+    }
     div.container {
         div.row {
             @media screen {
