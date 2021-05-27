@@ -1,0 +1,59 @@
+<head>
+
+</head>
+
+<style>
+  div.container {
+    width: 2000px;
+  }
+  table {
+    width: 100%;
+  }
+  img.header-photo {
+    padding-top: 20px;
+    height: auto;
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+    margin: 0;
+    height: 50px;
+  } 
+</style>
+
+<img
+  class="header-photo"
+  src="Cyclo/images/Cyclo.png"
+  style="height: auto"
+  width="100%"
+/>
+<table class="table-hover table table-responsive table-bordered">
+  <h1>STATIONNEMENT VÉLIB</h1>
+  <thead style="background-color: white">
+    <tr>
+      <th>Nom</th>
+      <th>Rue</th>
+      <th>Nbres Bornes</th>
+      <th>Géo</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <?php foreach ($data['records'] as $cyclo) : ?>
+
+    <tr>
+      <td><?= $cyclo["fields"]["nom"] ?></td>
+      <td><?= $cyclo["fields"]["street"] ?></td>
+      <td><?= $cyclo["fields"]["nb_bornettes"] ?></td>
+      <td><a href="#">
+          <span class="glyphicon glyphicon-map-marker"></span>
+        </a></td>
+    </tr>
+
+    <?php endforeach ?>
+
+
+  </tbody>
+</table>

@@ -41,7 +41,14 @@ elseif (isset($_GET['cafeconcert-carte'])) {
 }   elseif (isset($_GET['balade'])) {
     $ctrl = new CtrlBalade();
     $ctrl->getBalade();
-}
+
+} elseif (isset($_GET['cyclo-carte'])) {
+    $ctrl = new CtrlCyclo();
+    $ctrl->getCarteCyclo();
+
+} elseif (isset($_GET['cyclo-liste'])) {
+    $ctrl = new CtrlCyclo();
+    $ctrl->getListeCyclo();}
 else {
     $ctrl = new CtrlPage();
     $ctrl->getPage("accueil");
