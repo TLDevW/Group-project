@@ -5,24 +5,26 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
- <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>DWWM78</title>
+  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" />
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/css/animate.css" rel="stylesheet">
   <link href="assets/css/plugins.css" rel="stylesheet">
-  
+
   <!-- Custom CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
+
   <!-- Custom Fonts -->
   <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="assets/css/pe-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="shortcut icon" type="image/png" href="/images/croix.png" />
 </head>
 
 <body>
@@ -30,14 +32,22 @@
   <?php include "template/nav.html" ?>
 
   <div class="container">
+    <?php if (isset($titre)) : ?>
+      <div class="row">
+        <h1><?= $titre ?></h1>
+      </div>
+    <?php endif ?>
     <div class="row" style="display: flex;">
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 col-lg-offset-1" >
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 col-lg-offset-1">
         <?php include "{$page}" ?>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-lg-offset-1" >
-        
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-lg-offset-1">
+
       </div>
     </div>
+    <footer style="min-height:20px;">
+      
+    </footer>
   </div>
 </body>
 

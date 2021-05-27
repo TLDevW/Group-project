@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="Terrasse/css/terrasseListe.css">
+<div >
+    <ul>
+    <?php foreach ($data as $terrasse) : ?>
+    <?php if ($terrasse['fields']['terrasse_ouverte'] == "Terrasse ouverte") : ?>
+        <li>
+            <?= $terrasse['fields']['etablissement'] ?>
+            <ul>
+                <li>
+                    <?= $terrasse['fields']['adresse'] ?>
+                </li>
+            </ul>
+        </li>
+        <?php endif ?>
+        <?php endforeach ?>
+    </ul>
+</div>

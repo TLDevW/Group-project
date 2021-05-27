@@ -7,15 +7,21 @@ class CtrlTerrasse
     private $view;
     private $model;
 
-    public function __construct()
-    {
-        $this->view = new ViewTerrasse();
+    public function __construct(){
         $this->model = new ModelTerrasse();
+        $this->view = new ViewTerrasse();
     }
+    
 
-    public function getTerrasse()
+    public function getTerrasseListe()
     {
         $data = $this->model->getDataTerrasse();
-        $this->view->afficherTerrasse($data);
+        $this->view->afficherTerrasseListe($data);
+    }
+
+    public function getTerrasseCarte()
+    {
+        $data = $this->model->getDataTerrasse();
+        $this->view->afficherTerrasseCarte($data);
     }
 }

@@ -44,12 +44,12 @@ body h1 {
   }
 }
 
-body div.container div.row div:first-of-type {
+body div.container div.row > div:first-of-type {
   background-color: rgba(128, 128, 128, 0.2);
   min-height: 200px;
 }
 
-body div.container div.row div:last-of-type {
+body div.container div.row > div:last-of-type {
   background-color: rgba(128, 128, 128, 0.2);
   min-height: 200px;
 }

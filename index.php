@@ -17,9 +17,12 @@ if (isset($_GET['page'])) {
 } elseif (isset($_GET['widget'])) {
     $ctrl = new CtrlMeteo();
     $ctrl->widgetMeteo();
-} elseif (isset($_GET['terrasse'])) {
+} elseif (isset($_GET['terrasse-carte'])) {
     $ctrl = new CtrlTerrasse();
-    $ctrl->getTerrasse();
+    $ctrl->getTerrasseCarte();
+}elseif (isset($_GET['terrasse-liste'])) {
+    $ctrl = new CtrlTerrasse();
+    $ctrl->getTerrasseListe();
 } elseif (isset($_GET['cafeconcert-liste'])) {
     $ctrl = new CtrlCafeConcert();
     $ctrl->getListeCafeConcert();

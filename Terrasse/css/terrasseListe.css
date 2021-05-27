@@ -1,0 +1,21 @@
+body div.container {
+  width: 100%;
+}
+
+body div.container div.row div {
+  height: 600px;
+}
+
+body div.container div.row div h2 {
+  text-align: center;
+}
+
+body div.container div.row div div {
+  overflow-y: scroll;
+}
+
+body div.container div.row div div > ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=terrasseListe.css.map */

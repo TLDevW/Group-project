@@ -1,0 +1,22 @@
+body {
+    div.container {
+        width:100%;
+        div.row {
+            div {
+                height: 600px;
+                h2 {
+                    text-align: center;
+                }
+                div{
+                    overflow-y: scroll;
+                    //height: 100%;
+                    //background-color: rgba(128,128,128,0.7) !important;
+                    > ul {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

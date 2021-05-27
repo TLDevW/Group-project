@@ -40,11 +40,11 @@ color : $couleurThead;
                     display: block !important;
                 }
             }
-            div:first-of-type {
+            > div:first-of-type {
                 background-color: $couleurColonneGauche;
                 min-height: 200px;
             }
-            div:last-of-type {
+            > div:last-of-type {
                 background-color: $couleurColonneDroite;
                 min-height: 200px;
             }
