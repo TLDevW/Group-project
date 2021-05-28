@@ -42,7 +42,11 @@ elseif (isset($_GET['cafeconcert-carte'])) {
     $ctrl = new CtrlBalade();
     $ctrl->getBalade();
 
-} elseif (isset($_GET['cyclo-carte'])) {
+}elseif (isset($_GET['balade-carte'])) {
+    $ctrl = new CtrlBalade();
+    $ctrl->getBaladeCarte();
+}
+ elseif (isset($_GET['cyclo-carte'])) {
     $ctrl = new CtrlCyclo();
     $ctrl->getCarteCyclo();
 

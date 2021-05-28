@@ -1,38 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="Balade/css/balade.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Balade/css/balade.css">
-    <title>Balade</title>
-</head>
 
-<body>
-    <div class="all">
-        <h1 class="h1">Balades sur Paris</h1>
 
-        <?php foreach ($data["records"] as $balade) : ?>
-            <?php $time = strtotime($balade["fields"]["date_start"]);
+<img style="width:100% ; margin-top: 20px" src="Balade/images/paris.png">
+<div class="all">
+    <h1 class="h1">Balades sur Paris</h1>
+
+    <?php foreach ($data["records"] as $balade) : ?>
+    <?php $time = strtotime($balade["fields"]["date_start"]);
             $dateInLocal = date("d/m/Y H:i ", $time); ?>
 
-            <?php $timeEnd = strtotime($balade["fields"]["date_end"]);
+    <?php $timeEnd = strtotime($balade["fields"]["date_end"]);
             $dateInLocalEnd = date("d/m/Y H:i ", $time); ?>
 
-            <h3 onclick=showInfos(this)>
-                <?= $balade["fields"]["title"] ?>
-            </h3>
-            <h4>Date de début :
-                <?= $dateInLocal ?>
-            </h4>
+    <h3 onclick=showInfos(this)>
+        <?= $balade["fields"]["title"] ?>
+    </h3>
+    <h4>Date de début :
+        <?= $dateInLocal ?>
+    </h4>
 
-            <h4>Date de fin :
-                <?= $dateInLocalEnd ?>
-            </h4><br>
+    <h4>Date de fin :
+        <?= $dateInLocalEnd ?>
+    </h4><br>
 
-            <div class="hidden">
-                <?php
+    <div class="hidden">
+        <?php
                 $url = "";
                 if (isset($balade["fields"]["contact_url"])) {
                     $url = $balade["fields"]["contact_url"];
@@ -43,40 +36,37 @@
                 }
 
                 ?>
-                <h4 class="description">Description :
-                    <?= $balade["fields"]["description"] ?>
-                </h4>
+        <h4 class="description">Description :
+            <?= $balade["fields"]["description"] ?>
+        </h4>
 
-                <ul>
-                    <li>Site internet : <a target="_blank" href="<?= isset($url) ? $url : ""; ?> ">
-                            <?= ($url != "") ? $url : "Non renseigné"; ?>
-                        </a></li>
-                </ul>
-                <ul>
-                    <li>Adresse :
-                        <?= $balade["fields"]["address_street"] ?><br>
-                    </li>
-                </ul>
-                <h4>Prix :
-                    <?= $balade["fields"]["price_type"] ?>
-                </h4>
+        <ul>
+            <li>Site internet : <a target="_blank" href="<?= isset($url) ? $url : ""; ?> ">
+                    <?= ($url != "") ? $url : "Non renseigné"; ?>
+                </a></li>
+        </ul>
+        <ul>
+            <li>Adresse :
+                <?= $balade["fields"]["address_street"] ?><br>
+            </li>
+        </ul>
+        <h4>Prix :
+            <?= $balade["fields"]["price_type"] ?>
+        </h4>
 
-              
-            </div>
-            <hr>
-        <?php endforeach ?>
+
     </div>
+    <hr>
+    <?php endforeach ?>
+</div>
 
-    <script>
-        function showInfos(that) {
-            let element = that.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling;
-            if (element.className == "") {
-                element.className = "hidden";
-            } else {
-                element.className = "";
-            }
+<script>
+    function showInfos(that) {
+        let element = that.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling;
+        if (element.className == "") {
+            element.className = "hidden";
+        } else {
+            element.className = "";
         }
-    </script>
-</body>
-
-</html>
+    }
+</script>

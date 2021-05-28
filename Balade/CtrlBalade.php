@@ -13,4 +13,9 @@ class CtrlBalade{
         $data = $this->model->getDataBalade();
         $this->view->afficherBalade($data);
     }
+    public function getBaladeCarte()
+    {
+        $data = $this->model->getDataBalade();
+        $this->view->afficherBaladeCarte($data);
+    }
 }
