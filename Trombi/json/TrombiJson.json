@@ -1,0 +1,177 @@
+[{
+        "Nom": "TAURUS",
+        "Prenom": "Simon",
+        "Photo": "Trombi/Photos/Photosw8/garcon.png",
+        "groupe": "DWWM-8",
+        "module": "Balade parisienne",
+        "commentaire": ""
+    },
+    {
+        "Nom": "LALANNE",
+        "Prenom": "Thomas",
+        "Photo": "Trombi/Photos/Photosw8/thomas.jpg",
+        "groupe": "DWWM-8",
+        "module": "Balade parisienne",
+        "commentaire": ""
+    },
+    {
+        "Nom": "MEHDIOUI",
+        "Prenom": "Ayyoub",
+        "Photo": "Trombi/Photos/Photosw8/ayyoub.jpg",
+        "groupe": "DWWM-8",
+        "module": "Balade parisienne",
+        "commentaire": "Mettez pas vos doight dans mon code! il est pas tactile."
+    },
+    {
+        "Nom": "MAILLOT",
+        "Prenom": "Anthony",
+        "Photo": "Trombi/Photos/Photosw8/anthony.jpg",
+        "groupe": "DWWM-8",
+        "module": "Balade parisienne",
+        "commentaire": ""
+    },
+    {
+        "Nom": "AMILIEN",
+        "Prenom": "Azadeh",
+        "Photo": "Trombi/Photos/Photosw8/azadeh.jpg",
+        "groupe": "DWWM-8",
+        "module": "Balade parisienne",
+        "commentaire": ""
+    },
+    {
+        "Nom": "MOSSE",
+        "Prenom": "Frédéric",
+        "Photo": "Trombi/Photos/Photosw8/fred.jpg",
+        "groupe": "DWWM-8",
+        "module": "trombinoscope",
+        "commentaire": "J'ai une liaison secrète avec Odile d'Array..."
+    },
+    {
+        "Nom": "VEDIS",
+        "Prenom": "Charly",
+        "Photo": "Trombi/Photos/Photosw8/Charly_VEDIS.jpg",
+        "groupe": "DWWM-8",
+        "module": "trombinoscope",
+        "commentaire": "Chacun sa partie !"
+    },
+    {
+        "Nom": "HERNANDEZ",
+        "Prenom": "Jérôme",
+        "Photo": "Trombi/Photos/Photosw8/jerome.jpg",
+        "groupe": "DWWM-8",
+        "module": "trombinoscope",
+        "commentaire": "console.log('toto');"
+    },
+    {
+        "Nom": "TARDIVEL",
+        "Prenom": "Bruno",
+        "Photo": "Trombi/Photos/Photosw8/bruno_2.jpg",
+        "groupe": "DWWM-8",
+        "module": "emplacement velib",
+        "commentaire": "Anyone can be cool, but awesome takes practice."
+    },
+    {
+        "Nom": "SHERPA",
+        "Prenom": "Cyril",
+        "Photo": "Trombi/Photos/Photosw7/Cyril.jpg",
+        "groupe": "DWWM-7",
+        "module": "emplacement velib",
+        "commentaire": "Quand on change le code, on prévient ! Darius"
+    },
+    {
+        "Nom": "BISSILA",
+        "Prenom": "Alexandre",
+        "Photo": "Trombi/Photos/Photosw8/garcon.png",
+        "groupe": "DWWM-8",
+        "module": "",
+        "commentaire": ""
+    },
+    {
+        "Nom": "PUECH",
+        "Prenom": "Alain",
+        "Photo": "Trombi/Photos/Photosw7/Alain.jpg",
+        "groupe": "DWWM-7",
+        "module": "café concerts",
+        "commentaire": ""
+    },
+    {
+        "Nom": "ROUSTAING",
+        "Prenom": "Mickaël",
+        "Photo": "Trombi/Photos/Photosw7/Mickael.jpg",
+        "groupe": "DWWM-7",
+        "module": "café concerts",
+        "commentaire": ""
+    },
+    {
+        "Nom": "SOULIE",
+        "Prenom": "Rosalie",
+        "Photo": "Trombi/Photos/Photosw7/Rosalie.jpg",
+        "groupe": "DWWM-7",
+        "module": "terrasse",
+        "commentaire": "Entre les chêvres et le code, mon coeur balance!"
+    },
+    {
+        "Nom": "MARCHANDET",
+        "Prenom": "Jimmy",
+        "Photo": "Trombi/Photos/Photosw7/Jimmy.jpg",
+        "groupe": "DWWM-7",
+        "module": "terrasse",
+        "commentaire": ""
+    },
+    {
+        "Nom": "GEORGES",
+        "Prenom": "Pierre",
+        "Photo": "Trombi/Photos/Photosw7/Pierre.jpg",
+        "groupe": "DWWM-7",
+        "module": "terrasse",
+        "commentaire": "C'est mieux dehors que dedans"
+    },
+    {
+        "Nom": "HUE",
+        "Prenom": "Florian",
+        "Photo": "Trombi/Photos/Photosw7/garcon.png",
+        "groupe": "DWWM-7",
+        "module": "terrasse",
+        "commentaire": "la personne à ma gauche est moche."
+    },
+    {
+        "Nom": "THOCKLER",
+        "Prenom": "Yannick",
+        "Photo": "Trombi/Photos/Photosw8/yannick.jpg",
+        "groupe": "DWWM-8",
+        "module": "Festivals",
+        "commentaire": ""
+    },
+    {
+        "Nom": "DOBERVA",
+        "Prenom": "Lucie",
+        "Photo": "Trombi/Photos/Photosw8/fille.png",
+        "groupe": "DWWM-8",
+        "module": "Festivals",
+        "commentaire": ""
+    },
+    {
+        "Nom": "ROGER",
+        "Prenom": "Tiffanie",
+        "Photo": "Trombi/Photos/Photosw8/fille.png",
+        "groupe": "DWWM-8",
+        "module": "Festivals",
+        "commentaire": ""
+    },
+    {
+        "Nom": "SALA GARCIA",
+        "Prenom": "Anna",
+        "Photo": "Trombi/Photos/Photosw8/fille.png",
+        "groupe": "DWWM-8",
+        "module": "Festivals",
+        "commentaire": ""
+    },
+    {
+        "Nom": "AZNAR",
+        "Prenom": "Tom",
+        "Photo": "Trombi/Photos/Photosw8/garcon.png",
+        "groupe": "DWWM-8",
+        "module": "Festivals",
+        "commentaire": "Si je suis en bas à droite, sachez que ceci sera la derniére citation que vous lirez. Sinon celui qui a codé ça est un incapable."
+    }
+]

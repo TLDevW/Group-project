@@ -1,39 +1,39 @@
-$couleurColonneGauche : rgba(128,128,128,.2);
-$couleurColonneDroite : rgba(128,128,128,.2);
-$couleurTexte : #fcfcfc;
-$couleurLien : #fcfcfc;
-$couleurThead : #000;
-$couleurFond : #000;
-$couleurHover : rgba(128,128,128,0.5);
+$couleurColonneGauche: rgba(128, 128, 128, .2);
+$couleurColonneDroite: rgba(128, 128, 128, .2);
+$couleurTexte: #fcfcfc;
+$couleurLien: #fcfcfc;
+$couleurThead: #000;
+$couleurFond: #000;
+$couleurHover: rgba(128, 128, 128, 0.5);
 body {
-    color : $couleurTexte;
+    color: $couleurTexte;
     background-color: $couleurFond !important;
-  //  background-image: url("../assets/img/bg/bg3.jpg") ;
-  //  background: url("../images/800px-Toulouse_garonne_nuit.jpg") no-repeat;
+    //  background-image: url("../assets/img/bg/bg3.jpg") ;
+    //  background: url("../images/800px-Toulouse_garonne_nuit.jpg") no-repeat;
     background: url("../images/thumb-1920-523983.jpg") no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: 100%;
-
     nav.navbar.navbar-default {
         background-color: transparent;
-        color : $couleurTexte;
+        color: $couleurTexte;
     }
-    button.navbar-toggle{
+    button.navbar-toggle {
         background-color: rgba(255, 255, 255, .5) !important;
     }
     a {
-        color : $couleurLien;
+        color: $couleurLien;
     }
     table thead tr {
-color : $couleurThead;
+        color: $couleurThead;
     }
     table tbody tr:hover {
         background-color: $couleurHover;
     }
     h1 {
-        color : $couleurTexte;
+        color: $couleurTexte;
     }
     div.container {
+        width: 100%;
         div.row {
             @media screen {
                 display: flex;
@@ -41,11 +41,11 @@ color : $couleurThead;
                     display: block !important;
                 }
             }
-            > div:first-of-type {
+            >div:first-of-type {
                 background-color: $couleurColonneGauche;
                 min-height: 200px;
             }
-            > div:last-of-type {
+            >div:last-of-type {
                 background-color: $couleurColonneDroite;
                 min-height: 200px;
             }

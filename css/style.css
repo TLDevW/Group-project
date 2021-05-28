@@ -31,6 +31,10 @@ body h1 {
   color: #fcfcfc;
 }
 
+body div.container {
+  width: 100%;
+}
+
 @media screen {
   body div.container div.row {
     display: -webkit-box;

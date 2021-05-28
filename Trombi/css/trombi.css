@@ -1,0 +1,42 @@
+.stagiaire {
+    margin-top: 20px;
+}
+
+.stagiaire>div {
+    background-color: rgba(0, 0, 0, 0.82);
+    padding: 15px;
+    /*float: left;*/
+    border-radius: 15px;
+    height: 350px;
+    opacity: 1;
+    /*     width: 46%;
+    margin: 2%; */
+    width: 96%;
+    margin: 2%
+}
+
+.tromb {
+    width: 35%;
+    border-radius: 15px;
+    float: left;
+    border: solid 1px #acacac;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.group {
+    font-weight: bold;
+}
+
+.module {
+    clear: both;
+    font-size: 17px;
+}
+
+.commentaire {
+    font-size: 15px;
+}

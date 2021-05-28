@@ -9,7 +9,8 @@ spl_autoload_register(function ($class_name)
         'Terrasse/',
         'Festivals/',
         'Balade/',
-        'Cyclo/'
+        'Cyclo/',
+        'Trombi/'
 
     );
 

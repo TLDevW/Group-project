@@ -1,0 +1,26 @@
+<link href="Trombi/css/trombi.css" rel="stylesheet">
+
+
+<?php for($i=0; $i<count($data); $i++) : ?>
+<div class="stagiaire col-xs-12 col-lg-6">
+    <div>
+
+        <p><img class="tromb" src="<?= $data[$i]["Photo"] ?>" /></p>
+        <p class="name">Nom :
+            <?= $data[$i]["Nom"] ?>
+        </p>
+        <p class="prenom">Prénom :
+            <?= $data[$i]["Prenom"] ?>
+        </p>
+        <p class="group">Groupe :
+            <?= $data[$i]["groupe"] ?>
+        </p>
+        <p class="module">Module :
+            <?= $data[$i]["module"] ?>
+        </p>
+        <p class="commentaire">Commentaire :
+            <?= $data[$i]["commentaire"] ?>
+        </p>
+    </div>
+</div>
+<?php endfor ?>
