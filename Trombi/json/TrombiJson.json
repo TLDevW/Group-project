@@ -20,7 +20,7 @@
         "Photo": "Trombi/Photos/Photosw8/ayyoub.jpg",
         "groupe": "DWWM-8",
         "module": "Balade parisienne",
-        "commentaire": "Mettez pas vos doight dans mon code! il est pas tactile."
+        "commentaire": "Mettez pas vos doigts dans mon code ! il est pas tactile."
     },
     {
         "Nom": "MAILLOT",
@@ -108,7 +108,7 @@
         "Photo": "Trombi/Photos/Photosw7/Rosalie.jpg",
         "groupe": "DWWM-7",
         "module": "terrasse",
-        "commentaire": "Entre les chêvres et le code, mon coeur balance!"
+        "commentaire": "Entre les chèvres et le code, mon coeur balance!"
     },
     {
         "Nom": "MARCHANDET",
@@ -137,7 +137,7 @@
     {
         "Nom": "THOCKLER",
         "Prenom": "Yannick",
-        "Photo": "Trombi/Photos/Photosw8/yannick.jpg",
+        "Photo": "Trombi/Photos/Photosw8/garcon.png",
         "groupe": "DWWM-8",
         "module": "Festivals",
         "commentaire": ""
@@ -172,6 +172,6 @@
         "Photo": "Trombi/Photos/Photosw8/garcon.png",
         "groupe": "DWWM-8",
         "module": "Festivals",
-        "commentaire": "Si je suis en bas à droite, sachez que ceci sera la derniére citation que vous lirez. Sinon celui qui a codé ça est un incapable."
+        "commentaire": "Si je suis en bas à droite, sachez que ceci sera la dernière citation que vous lirez. Sinon celui qui a codé ça est un incapable."
     }
 ]

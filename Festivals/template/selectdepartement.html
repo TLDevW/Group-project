@@ -1,6 +1,7 @@
-<form style="padding: 10px;">
+<link rel="stylesheet" href="Festivals/template/css/style.css">
+<form class="form-inline">
 <label for="departement">Choisissez votre département : </label>
-<select class="form-select" style="margin-left: 10px; color:black" size="3" name="departement">
+<select class="form-control" name="departement">
     <?php for($i=1; $i <96; $i++) : ?>
     <option value="<?= ($i < 10) ? "0{$i}" : $i ?>"><?= ($i < 10) ? "0{$i}" : $i ?></option>
     <?php endfor ?>
@@ -11,6 +12,6 @@
     <option value="976">976</option>
 </select>
 
-<button style="margin-left: 10px;" type="submit" class="btn1 btn-warning">Rechercher</button>
+<button type="submit" class="btn1 btn-default rounded">Rechercher</button>
 </form>
 
