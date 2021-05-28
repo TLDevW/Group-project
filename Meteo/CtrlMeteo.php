@@ -21,6 +21,7 @@ class CtrlMeteo
     }
 
     public function widgetMeteo(){
+      
         $heure = date('H') . "H00";
         $ville = $_SESSION['meteo']['city_info']['name'];
         $data = $_SESSION['meteo']['fcst_day_0']['hourly_data'][$heure];

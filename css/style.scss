@@ -13,7 +13,26 @@ body {
     background: url("../images/thumb-1920-523983.jpg") no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+
+.glyphicon {
+    color:$couleurTexte;
+}
+
+    @media (max-width: 768px) {
+        .navbar-default .nav li a {
+            font-size: 13px;
+            padding: 10px 15px;
+            color: $couleurTexte !important;
+          }
+          button.navbar-toggle .collapsed {
+            background-color:$couleurTexte !important;
+        }
+
+    }
+
+
     nav.navbar.navbar-default {
+        
         background-color: transparent;
         color: $couleurTexte;
     }
@@ -21,6 +40,7 @@ body {
         background-color: rgba(255, 255, 255, .5) !important;
     }
     a {
+
         color: $couleurLien;
     }
     table thead tr {
@@ -39,7 +59,9 @@ body {
                 display: flex;
                 @media (max-width: 768px) {
                     display: block !important;
+
                 }
+
             }
             >div:first-of-type {
                 background-color: $couleurColonneGauche;

@@ -6,6 +6,21 @@ body {
   background-size: 100%;
 }
 
+body .glyphicon {
+  color: #fcfcfc;
+}
+
+@media (max-width: 768px) {
+  body .navbar-default .nav li a {
+    font-size: 13px;
+    padding: 10px 15px;
+    color: #fcfcfc !important;
+  }
+  body button.navbar-toggle .collapsed {
+    background-color: #fcfcfc !important;
+  }
+}
+
 body nav.navbar.navbar-default {
   background-color: transparent;
   color: #fcfcfc;

@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_set("Europe/Paris");
 include_once "autoload.php";
 
 if (isset($_GET['page'])) {

@@ -1,1 +1,14 @@
-<h2><?= $ville ?></h2>
+<div id="widget">
+    <h3><?php echo $ville ?></h3>
+    <h4><?php echo $data['CONDITION'] ?></h4>
+    <div>
+        <div>
+            <img src="<?php echo $data['ICON'] ?>">
+        </div>
+        <div>
+            <h1><?php echo $data['TMP2m'] . "°C" ?></h1>
+        </div>
+    </div>
+    <h2><?php echo date('H \: i') ?></h2>
+</div>
+<link rel="stylesheet" href="Meteo/css/widget.css"> 

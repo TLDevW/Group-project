@@ -1,0 +1,25 @@
+div#widget {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h3 {
+        margin: 5px;
+    }
+    h4 {
+        margin: 5px;
+    }
+    & > h2 {
+        margin: 5px;
+    }
+    div {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        div {
+            img {
+                width: 80px;
+            }
+        }
+    }
+}
