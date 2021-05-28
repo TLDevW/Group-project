@@ -16,13 +16,13 @@ $(document).ready(function () {
             },
             complete: function (result) {
                 // faire qq chose quand c'est fini 
-                console.log('fini');
+                //console.log('fini');
             }
         });
     }
     function ajaxSuccess(o) {
         obj = o;
-        console.log(obj);
+        //console.log(obj);
         addWidget();
     }
 
