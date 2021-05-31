@@ -1,10 +1,10 @@
 <head>
-
+ 
 </head>
 
 <style>
   div.container {
-    width: 2000px;
+    width: 100%;
   }
   table {
     width: 100%;
@@ -20,8 +20,9 @@
     padding-top: 5px;
     margin: 0;
     height: 50px;
-  } 
+  }
 </style>
+
 
 <img
   class="header-photo"
@@ -29,31 +30,37 @@
   style="height: auto"
   width="100%"
 />
-<table class="table-hover table table-responsive table-bordered">
-  <h1>STATIONNEMENT VÉLIB</h1>
-  <thead style="background-color: white">
-    <tr>
-      <th>Nom</th>
-      <th>Rue</th>
-      <th>Nbres Bornes</th>
-      <th>Géo</th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <?php foreach ($data['records'] as $cyclo) : ?>
+<div class="pre-scrollable" style="overflow-y: scroll" ;>
+  <table class="table table-bordered">
+    <h1>STATIONNEMENT VÉLIB</h1>
+    <thead style="background-color: white">
+      <tr>
+        <th>Nom</th>
+        <th>Rue</th>
+        <th>Nbres Bornes</th>
+        <th>Géo</th>
+      </tr>
+    </thead>
 
-    <tr>
-      <td><?= $cyclo["fields"]["nom"] ?></td>
-      <td><?= $cyclo["fields"]["street"] ?></td>
-      <td><?= $cyclo["fields"]["nb_bornettes"] ?></td>
-      <td><a href="#">
-          <span class="glyphicon glyphicon-map-marker"></span>
-        </a></td>
-    </tr>
+    <tbody>
+      <?php foreach ($data['records'] as $cyclo) : ?>
 
-    <?php endforeach ?>
+      <?php $a=$cyclo["fields"]["geo_point_2d"][0]?>
+      <?php $b=$cyclo["fields"]["geo_point_2d"][1]?>
+      
+      <tr>
+        <td><?= $cyclo["fields"]["nom"] ?></td>
+        <td><?= $cyclo["fields"]["street"] ?></td>
+        <td><?= $cyclo["fields"]["nb_bornettes"] ?></td>
+        <td >
+          <a href="?cyclo=&CoorX=<?= $a?>&CoorY=<?=$b?>">
+            <span class="glyphicon glyphicon-map-marker"></span>
+          </a>
+        </td>
+      </tr>
 
-
-  </tbody>
-</table>
+      <?php endforeach ?>
+    </tbody>
+  </table>
+</div>

@@ -12,5 +12,10 @@ class ViewCyclo{
         $page = "Cyclo/template/CarteCyclo.html";
         include "template/template.html";
     }
+    public function afficherCarteCycloBis($a,$b){
+        $page = "Cyclo/template/CarteCycloBis.html";
+        include "template/template.html";
+        
+    }
 }
 

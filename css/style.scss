@@ -36,6 +36,14 @@ body {
         background-color: transparent;
         color: $couleurTexte;
     }
+    button.btn-default {
+        height: 50px !important;
+    }
+    .form-control {
+        background-color: $couleurTexte;
+        opacity: 0.8;
+        border-radius: 6px;
+    }
     button.navbar-toggle {
         background-color: rgba(255, 255, 255, .5) !important;
     }
@@ -44,7 +52,7 @@ body {
         color: $couleurLien;
     }
     table thead tr {
-        color: $couleurThead;
+        color: $couleurTexte;
     }
     table tbody tr:hover {
         background-color: $couleurHover;
@@ -73,4 +81,12 @@ body {
             }
         }
     }
+
+  /*   footer{
+        height: 50px;
+        padding-top: 20px;
+        img{
+            height: 50px;
+        }
+    } */
 }

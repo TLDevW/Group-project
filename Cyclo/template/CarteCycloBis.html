@@ -1,0 +1,43 @@
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+<style>
+    html,
+    body {
+        height: 100%
+    }
+</style>
+
+
+    <p>
+        les coordonées sont :
+        <?php
+        if (isset($_GET['CoorX']) and isset($_GET['CoorY'])) {
+            echo $_GET['CoorX'] . "et" . $_GET['CoorY'];
+        } else {
+            echo 'walou!!!!!';
+        }
+        ?>
+    </p>
+
+
+    <div id="map" style="width:100%; height:400px"></div>
+
+
+<script>
+    window.onload = initialize;
+    function initialize() {
+        
+
+
+        var map = L.map('map').setView([<?= $a?>, <?= $b ?>], 19);
+        var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 19
+        });
+        L.marker([<?= $a?>, <?= $b ?>]).addTo(map)
+            .bindPopup('Le texte du marker<br> On peut y mettre du code HTML');
+        map.addLayer(osmLayer);
+    }
+</script>

@@ -1,0 +1,33 @@
+body .glyphicon {
+    color: initial;
+}
+
+div.container {
+    width: 100%;
+    div.row {
+        div:first-of-type {
+            h1 {
+                background-color: white;
+                text-align: center;
+                vertical-align: middle;
+                padding-top: 5px;
+                margin: 0;
+                height: 50px;
+                color: black !important;
+            }
+            div{
+                width: 100%;
+                img.header-photo {
+                    padding-top: 20px;
+                    height: auto;
+                    width: 100%;
+                    tbody {
+                        tr:hover {
+                            background-color: rgba(128, 128, 128, 0.5) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

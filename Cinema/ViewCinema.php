@@ -10,4 +10,8 @@ class ViewCinema
         $page = "Cinema/template/cinema.html";
         include "template/template.html";
     }
+    public function afficherCarteCinema($data){
+        $page = "Cinema/template/CarteCinema.html";
+        include "template/template.html";
+    }
 }

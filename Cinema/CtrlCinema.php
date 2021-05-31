@@ -13,4 +13,8 @@ class CtrlCinema{
         $data = $this->model->getDataCinema();
         $this->view->afficherListeCinema($data);
     }
+    public function getCarteCinema(){
+        $data = $this->model->getDataCinema();
+        $this->view->afficherCarteCinema($data);
+    }
 }

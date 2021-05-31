@@ -1,0 +1,36 @@
+footer{
+    height: 50px;
+    padding-top: 20px;
+    h4 {
+        text-decoration: underline;
+        
+    }
+    
+    div {
+       
+        display: flex;
+       
+           
+        
+    }
+    
+    img {
+        height: 50px;
+        float: right;
+        margin-top: 180px;
+        opacity: 0.5;
+        
+    }
+    
+    p:first-of-type {
+        float: right;
+        padding-bottom: 100px;
+        margin-right: 10px;
+    }
+    p:last-of-type{
+        text-align: center;
+        i.glyphicon.glyphicon-copyright-mark {
+            color:white ;
+        }
+    }
+}

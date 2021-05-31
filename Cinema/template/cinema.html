@@ -1,4 +1,23 @@
-<ul>
+<link rel="stylesheet" href="Cinema/cssCinema/styleCinema.css"> 
+
+
+
+
+<table class="table table-responsive">
+    <img class="header-photo" src="Cinema/img/cinema1.jpg" style="height: auto;" width="100%"/>
+    <h1><span class="glyphicon glyphicon-film " aria-hidden="true"></span> CINEMA <span
+            class="glyphicon glyphicon-film" aria-hidden="true"></span></h1>
+     <thead style="background-color: white;">
+        <tr class="table table-responsive">
+            <th>NON</th>
+            <th>adresse</th>
+            <th>SITE WEB</th>
+       </tr>
+     </thead>
+
+     <tbody>
+
+   
     <?php foreach ($data['records'] as $cinema) : ?>
         <?php
         $url = "";
@@ -11,11 +30,17 @@
         }
 
         ?>
-        <li> <?= $cinema["fields"]["eq_nom_equipement"] ?>
-            <ul>
-                <li> <a target="_blank" href="<?= isset($url) ? $url : ""; ?> "><?= ($url!="") ? $url : "Non renseigné"; ?> </a></li>
-            </ul>
-        </li>
 
-    <?php endforeach ?>
-</ul>
+        <tr>
+            <td>
+                <?= $cinema["fields"]["eq_nom_equipement"] ?>
+            </td> 
+            <td style="width: 250px;"> 
+            <?= (isset($cinema["fields"]["numero"]) ? $cinema["fields"]["numero"] :"")." ".$cinema["fields"]["lib_off"]."</br>".$cinema["fields"]["id_secteur_postal"]." ".$cinema["fields"]["eq_ville"]   ?>
+            </td> 
+            <td>
+            <a target="_blank" href="<?= isset($url) ? $url : ""; ?> "><?= ($url!="") ? "Lien du site web": "Non renseigné"; ?> </a> 
+            </td>
+            <?php endforeach ?>
+            </tbody> 
+        </table>

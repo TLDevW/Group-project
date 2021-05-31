@@ -20,4 +20,10 @@ class CtrlCyclo
         $data = $this->model->getDataCyclo();
         $this->view->afficherCarteCyclo($data);
     }
+    
+    public function getCarte($a,$b){
+        $this->view->afficherCarteCycloBis($a,$b);
+        
+    }
+    
 }

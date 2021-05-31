@@ -4,6 +4,13 @@ body {
   background: url("../images/thumb-1920-523983.jpg") no-repeat;
   background-attachment: fixed;
   background-size: 100%;
+  /*   footer{
+        height: 50px;
+        padding-top: 20px;
+        img{
+            height: 50px;
+        }
+    } */
 }
 
 body .glyphicon {
@@ -26,6 +33,16 @@ body nav.navbar.navbar-default {
   color: #fcfcfc;
 }
 
+body button.btn-default {
+  height: 50px !important;
+}
+
+body .form-control {
+  background-color: #fcfcfc;
+  opacity: 0.8;
+  border-radius: 6px;
+}
+
 body button.navbar-toggle {
   background-color: rgba(255, 255, 255, 0.5) !important;
 }
@@ -35,7 +52,7 @@ body a {
 }
 
 body table thead tr {
-  color: #000;
+  color: #fcfcfc;
 }
 
 body table tbody tr:hover {

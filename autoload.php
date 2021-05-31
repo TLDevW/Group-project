@@ -10,7 +10,8 @@ spl_autoload_register(function ($class_name)
         'Festivals/',
         'Balade/',
         'Cyclo/',
-        'Trombi/'
+        'Trombi/',
+        'mentionsLegales/'
 
     );
 

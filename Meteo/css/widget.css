@@ -7,6 +7,7 @@ div#widget {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  height: 200px;
 }
 
 div#widget h3 {
@@ -39,5 +40,10 @@ div#widget div {
 
 div#widget div div img {
   width: 80px;
+}
+
+div#widget div div > h1 {
+  background-color: initial;
+  color: white !important;
 }
 /*# sourceMappingURL=widget.css.map */

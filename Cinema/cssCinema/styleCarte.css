@@ -1,0 +1,24 @@
+body .glyphicon {
+  color: initial;
+}
+
+div.container {
+  width: 100%;
+}
+
+div.container div.row img.header-photo {
+  padding-top: 20px;
+  height: auto;
+  width: 100%;
+}
+
+div.container div.row div:first-of-type h1 {
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+  margin: 0;
+  height: 50px;
+  color: black !important;
+}
+/*# sourceMappingURL=styleCarte.css.map */

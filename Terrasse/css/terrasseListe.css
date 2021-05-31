@@ -2,19 +2,16 @@ body div.container {
   width: 100%;
 }
 
-body div.container div.row div {
-  height: 600px;
-}
-
-body div.container div.row div h2 {
+body div.container > div.row > div h2 {
   text-align: center;
 }
 
-body div.container div.row div div#terrasse {
+body div.container > div.row > div > div#terrasse {
+  height: 600px;
   overflow-y: scroll;
 }
 
-body div.container div.row div div#terrasse > ul {
+body div.container > div.row > div > div#terrasse > ul {
   margin-top: 10px;
   margin-bottom: 10px;
 }
